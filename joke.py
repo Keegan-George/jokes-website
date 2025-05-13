@@ -1,5 +1,5 @@
 """
-A class that contains a single function for retrieving two-part jokes from the JokeAPI.
+Contains a single function for retrieving two-part jokes from the JokeAPI.
 """
 
 import requests
