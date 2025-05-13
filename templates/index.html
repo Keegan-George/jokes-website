@@ -26,11 +26,13 @@
             src="{{url_for('static', filename='img/rectangular-speech-bubble.png')}}"
             alt="speech bubble"
           />
+          <p class = "joke">
           {% if joke %}
-          <p class="joke">{{joke[0]}}<br />{{joke[1]}}</p>
-          {% else %}
-          <p class="joke">Click the clown for a new joke!</p>
+            <span class="joke-setup">{{joke[0]}}</span><br><br>{{joke[1]}}
+          {% else %} 
+            Click the clown for a new joke! 
           {% endif %}
+          </p>
         </div>
       </div>
     </div>
