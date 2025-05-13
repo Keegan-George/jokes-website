@@ -1,5 +1,5 @@
 """
-A website that queries a new joke, from the Joke API, each time the clown image is clicked. 
+A website that queries a new joke, from the Joke API, each time the clown image is clicked.
 """
 
 from joke import get_joke
