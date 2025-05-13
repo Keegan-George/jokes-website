@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+}
+
+.bubble {
+  display: inline-block;
+}
+
+.bubble-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.bubble-wrapper img {
+  display: block;
+  width: 100%;
+}
+
+.joke {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: 26px;
+  width: 90%;
+  height: 40%;
+  padding: 5px;
+}

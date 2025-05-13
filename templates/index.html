@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokes</title>
+    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="clown">
+        <form method="post">
+          <input
+            type="image"
+            src="{{url_for('static', filename='clown.png')}}"
+            alt="submit"
+          />
+        </form>
+      </div>
+      <div class="bubble">
+        <div class="bubble-wrapper">
+          <img
+            src="{{url_for('static', filename='rectangular-speech-bubble.png')}}"
+            alt="speech bubble"
+          />
+          {% if joke %}
+            <p class="joke">{{joke[0]}}<br />{{joke[1]}}</p>
+          {% else %}
+            <p class="joke">Click the clown for a new joke!</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
